@@ -1,0 +1,5 @@
+- name: Install cronjob
+  copy:
+    src: "{{ cron_config_file }}"
+    dest: /etc/cron.d/
+  tags: cron
