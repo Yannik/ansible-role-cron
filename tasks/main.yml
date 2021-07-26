@@ -1,5 +1,6 @@
-- name: Install cronjob
-  copy:
-    src: "{{ cron_config_file }}"
+- name: Install cronjobs
+  template:
+    src: "{{ item }}"
     dest: /etc/cron.d/
+  with_fileglob: "{{ cron_config_files }}"
   tags: cron

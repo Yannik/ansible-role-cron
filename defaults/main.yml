@@ -1,1 +1,1 @@
-cron_config_file: "{{ inventory_dir }}/files/{{ inventory_hostname }}/cron/ansible-cron"
+cron_config_files: "{{ inventory_dir }}/files/{{ inventory_hostname }}/cron/*"
