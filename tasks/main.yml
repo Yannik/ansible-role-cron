@@ -1,3 +1,8 @@
+- name: Install cron package
+  package:
+    name: cron
+  tags: cron
+
 - name: Install cronjobs
   template:
     src: "{{ item }}"
